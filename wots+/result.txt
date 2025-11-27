@@ -1,0 +1,176 @@
+WOTS+ Original Implementation Benchmark
+Parameters: n=32, w=256, l=34, message length=64 bytes, rounds=10
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation:
+   - Hash iterations: 8670
+   - Time: 13.78 ms
+2. Signature Generation:
+   - Average hash iterations: 4131
+   - Average time: 7.15 ms
+3. Signature Verification:
+   - Average hash iterations: 4539
+   - Average time: 7.63 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 1088 bytes
+   - Public key: 1088 bytes
+   - Signature: 1088 bytes
+
+WOTS+ Implementation (w=16) Benchmark
+Parameters: n=32, w=16, l=67, message length=64 bytes, rounds=10
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation:
+   - Hash iterations: 1005
+   - Time: 1.49 ms
+2. Signature Generation:
+   - Average hash iterations: 496
+   - Average time: 0.89 ms
+3. Signature Verification:
+   - Average hash iterations: 508
+   - Average time: 0.89 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 2144 bytes
+   - Public key: 2144 bytes
+   - Signature: 2144 bytes
+
+
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=256, l=34, message length=64 bytes, rounds=10
+Middle values: interval=16, count per chain=17
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 8670
+   - Time: 13.96 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 272
+   - Average time: 0.45 ms
+   - Average saved iterations: 3756
+3. Signature Verification:
+   - Average hash iterations: 4641
+   - Average time: 8.33 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 1088 bytes
+   - Public key: 1088 bytes
+   - Signature: 1088 bytes
+   - Middle values storage: 18496 bytes
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=256, l=34, message length=64 bytes, rounds=10
+Middle values: interval=8, count per chain=33
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 8670
+   - Time: 12.88 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 118
+   - Average time: 0.19 ms
+   - Average saved iterations: 3961
+3. Signature Verification:
+   - Average hash iterations: 4590
+   - Average time: 8.11 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 1088 bytes
+   - Public key: 1088 bytes
+   - Signature: 1088 bytes
+   - Middle values storage: 35904 bytes
+
+
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=256, l=34, message length=64 bytes, rounds=10
+Middle values: interval=32, count per chain=9
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 8670
+   - Time: 13.21 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 490
+   - Average time: 0.82 ms
+   - Average saved iterations: 3488
+3. Signature Verification:
+   - Average hash iterations: 4692
+   - Average time: 8.29 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 1088 bytes
+   - Public key: 1088 bytes
+   - Signature: 1088 bytes
+   - Middle values storage: 9792 bytes
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=256, l=34, message length=64 bytes, rounds=10
+Middle values: interval=64, count per chain=5
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 8670
+   - Time: 13.74 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 1052
+   - Average time: 1.98 ms
+   - Average saved iterations: 3129
+3. Signature Verification:
+   - Average hash iterations: 4488
+   - Average time: 7.86 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 1088 bytes
+   - Public key: 1088 bytes
+   - Signature: 1088 bytes
+   - Middle values storage: 5440 bytes
+
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=16, l=67, message length=64 bytes, rounds=10
+Middle values: interval=8, count per chain=3
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 1005
+   - Time: 1.49 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 233
+   - Average time: 0.36 ms
+   - Average saved iterations: 261
+3. Signature Verification:
+   - Average hash iterations: 510
+   - Average time: 0.80 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 2144 bytes
+   - Public key: 2144 bytes
+   - Signature: 2144 bytes
+   - Middle values storage: 6432 bytes
+
+
+WOTS+ Accelerated Implementation (with middle values) Benchmark
+Parameters: n=32, w=16, l=67, message length=64 bytes, rounds=10
+Middle values: interval=4, count per chain=5
+
+Benchmark Results (Average over 10 rounds)
+1. Key Generation (with middle values):
+   - Hash iterations: 1005
+   - Time: 1.48 ms
+2. Signature Generation (accelerated):
+   - Average hash iterations: 97
+   - Average time: 0.14 ms
+   - Average saved iterations: 395
+3. Signature Verification:
+   - Average hash iterations: 511
+   - Average time: 0.82 ms
+   - Verification success rate: 100%
+4. Sizes:
+   - Private key: 2144 bytes
+   - Public key: 2144 bytes
+   - Signature: 2144 bytes
+   - Middle values storage: 10720 bytes
+
